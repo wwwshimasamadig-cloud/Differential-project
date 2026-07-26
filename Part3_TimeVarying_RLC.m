@@ -50,7 +50,6 @@ for j = 1:length(N_list)
     err_j = abs(vj - Y_num3(:,1)');
     semilogy(t_series, err_j, 'LineWidth', 1.5, 'DisplayName', sprintf('N = %d', Nj));
 end
-set(gca, 'YScale', 'log');
 grid on;
 xlabel('Time (s)');
 ylabel('|Power series - ode45|');
