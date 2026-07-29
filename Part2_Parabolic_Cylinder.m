@@ -59,8 +59,9 @@ for idx = 1:length(n_vals)
     x_c2_all{idx} = x_c2;
     Y_c2_all{idx} = Y_c2;
     figure('Name', sprintf('Part 2: Solutions for n = %d', n), 'NumberTitle', 'off');
-    plot(x_c1, Y_c1(:,1), 'b-', 'LineWidth', 2); hold on;
-    plot(x_c2, Y_c2(:,1), 'r--', 'LineWidth', 2);
+    plot(x_c1, Y_c1(:,1), 'b-', 'LineWidth', 2);ylim([-5, 5]);
+    hold on;
+    plot(x_c2, Y_c2(:,1), 'r--', 'LineWidth', 2);ylim([-5, 5]);
     xline(x_turn, 'k:', 'LineWidth', 1.5);
     grid on;
     xlabel('x');
